@@ -1,0 +1,25 @@
+<html>
+<head>
+    <script src="angular.min.js"> </script>
+    <script src="lunchboxController.js"></script>
+<title>Lunch box !!</title>    
+</head>
+    <!--<body ng-app="myApp">
+    <div ng-controller="myCtrl">
+        <input type="text" ng-model="name" ng-keyup="displayValue();">
+        the numberic value of your name is : {{nameValue}}
+            
+    </div>
+    </body>-->
+     <body ng-app="myApp">
+    <div ng-controller="myCtrl">
+        
+    <input type="text" ng-model="lunchItems" placeholder="please enter list of items in lunch"/>
+        <input type="button" value="Check If Too Much" ng-click="inspectLunchBox()"/>
+        
+        <br>
+        {{message}}
+        
+    </div>
+    </body>
+</html>
